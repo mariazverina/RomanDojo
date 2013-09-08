@@ -54,10 +54,10 @@ class Test(unittest.TestCase):
         threeHundred = RomanNumber(300)
         self.assertEqual(threeHundred.text(), "CCC")
          
-
     def testRoman0isEmptyString(self):
         zero = RomanNumber(0)
         self.assertEqual(zero.text(), "")
+        
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

@@ -14,12 +14,16 @@ class RomanNumber(object):
         self.number = number
 
     
+
+    @staticmethod
+    def digitValue(number):
+        return RomanNumber.digits[number]
+
     def text(self):
-        result = self.digits[self.number]
-        if result == '':
-            result = self.digits[self.number / 2] * 2
-        if result == '':
-            result = self.digits[self.number / 3] * 3
+        for i in range(1, 4):
+            result = self.digitValue(self.number / i) * i
+            if result != '':
+                break
         return result   
     
     
