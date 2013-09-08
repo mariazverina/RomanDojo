@@ -58,6 +58,10 @@ class Test(unittest.TestCase):
         zero = RomanNumber(0)
         self.assertEqual(zero.text(), "")
         
+    def testSimpleCombination(self):
+        six = RomanNumber(6)
+        self.assertEqual(six.text(), "VI")        
+        
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
