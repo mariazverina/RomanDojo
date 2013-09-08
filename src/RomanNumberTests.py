@@ -21,17 +21,23 @@ class Test(unittest.TestCase):
     def testRoman1isI(self):
         one = RomanNumber(1)
         self.assertEqual(one.text(), "I")
-        pass
 
     def testRoman5isV(self):
-        one = RomanNumber(5)
-        self.assertEqual(one.text(), "V")
-        pass
+        five = RomanNumber(5)
+        self.assertEqual(five.text(), "V")
 
     def testRoman10isX(self):
-        one = RomanNumber(10)
-        self.assertEqual(one.text(), "X")
-        pass
+        ten = RomanNumber(10)
+        self.assertEqual(ten.text(), "X")
+    
+    def testRoman50isL(self):
+        fifty = RomanNumber(50)
+        self.assertEqual(fifty.text(), "L")
+    
+    def testRoman100isC(self):
+        hundred = RomanNumber(100)
+        self.assertEqual(hundred.text(), "C")
+    
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
