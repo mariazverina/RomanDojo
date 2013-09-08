@@ -70,10 +70,18 @@ class Test(unittest.TestCase):
         n3001 = RomanNumber(3001)
         self.assertEqual(n3001.text(), "MMMI")
         
-    def testRoman4(self):
+    def testRoman4isIV(self):
         four = RomanNumber(4)
         self.assertEqual(four.text(), "IV")
         
+    def testRoman9isIX(self):
+        nine = RomanNumber(9)
+        self.assertEqual(nine.text(), "IX")
+        
+    def testRoman1999isMCMXCIX(self):
+        n1999 = RomanNumber(1999)
+        self.assertEqual(n1999.text(), "MCMXCIX")
+
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

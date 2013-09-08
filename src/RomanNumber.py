@@ -7,7 +7,8 @@ Created on Sep 8, 2013
 from collections import defaultdict
 
 class RomanNumber(object):
-    digits = defaultdict(lambda: "", {1 : "I", 4 : "IV", 5 : "V", 10 : "X", 50: "L", 100: "C", 500: "D", 1000: "M"})
+    digits = defaultdict(lambda: "", {1: "I",  5: "V", 10: "X", 50: "L", 100: "C", 500: "D", 1000: "M",
+                                      4: "IV", 9: "IX", 90: "XC", 900: "CM"})
     divisors = sorted(digits.keys(), reverse=True)
 
 
