@@ -38,7 +38,18 @@ class Test(unittest.TestCase):
         hundred = RomanNumber(100)
         self.assertEqual(hundred.text(), "C")
     
+    def testRoman500isD(self):
+        fiveHundred = RomanNumber(500)
+        self.assertEqual(fiveHundred.text(), "D")
 
+    def testRoman1000isM(self):
+        thousand = RomanNumber(1000)
+        self.assertEqual(thousand.text(), "M")
+        
+    def testDoubleDigitRepetition(self):
+        twenty = RomanNumber(20)
+        self.assertEqual(twenty.text(), "XX")
+        
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
