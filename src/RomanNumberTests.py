@@ -23,6 +23,15 @@ class Test(unittest.TestCase):
         self.assertEqual(one.text(), "I")
         pass
 
+    def testRoman5isV(self):
+        one = RomanNumber(5)
+        self.assertEqual(one.text(), "V")
+        pass
+
+    def testRoman10isX(self):
+        one = RomanNumber(10)
+        self.assertEqual(one.text(), "X")
+        pass
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

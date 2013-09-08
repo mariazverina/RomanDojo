@@ -5,19 +5,15 @@ Created on Sep 8, 2013
 '''
 
 class RomanNumber(object):
-    '''
-    classdocs
-    '''
+    digits = {1 : "I", 5 : "V", 10 : "X"}
 
 
-    def __init__(selfparams, number): 
-        '''
-        Constructor
-        '''
+    def __init__(self, number):
+        self.number = number
 
     
     def text(self):
-        return "I"
+        return self.digits[self.number]
     
     
-        
+
