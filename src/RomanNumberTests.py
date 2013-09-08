@@ -62,6 +62,15 @@ class Test(unittest.TestCase):
         six = RomanNumber(6)
         self.assertEqual(six.text(), "VI")        
         
+    def testLongCombination(self):
+        sixsixsix = RomanNumber(666)
+        self.assertEqual(sixsixsix.text(), "DCLXVI")        
+
+    def testRoman3001isMMMI(self):
+        n3001 = RomanNumber(3001)
+        self.assertEqual(n3001.text(), "MMMI")
+        
+        
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

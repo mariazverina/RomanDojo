@@ -15,7 +15,7 @@ class RomanNumber(object):
         self.number = number
 
     @staticmethod
-    def digitValue(number):
+    def romanSymbol(number):
         return RomanNumber.digits[number]
 
     @staticmethod
@@ -23,9 +23,8 @@ class RomanNumber(object):
         result = ''
         for divisor in RomanNumber.divisors:
             digitCount = number / divisor
-            if digitCount > 0:
-                number = number - digitCount * divisor
-                result += RomanNumber.digitValue(divisor) * digitCount
+            number = number - digitCount * divisor
+            result += RomanNumber.romanSymbol(divisor) * digitCount
         return result   
             
     def text(self):
