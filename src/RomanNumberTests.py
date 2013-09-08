@@ -70,6 +70,9 @@ class Test(unittest.TestCase):
         n3001 = RomanNumber(3001)
         self.assertEqual(n3001.text(), "MMMI")
         
+    def testRoman4(self):
+        four = RomanNumber(4)
+        self.assertEqual(four.text(), "IV")
         
 
 if __name__ == "__main__":
