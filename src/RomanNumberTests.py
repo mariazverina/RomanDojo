@@ -83,9 +83,15 @@ class Test(unittest.TestCase):
         self.assertEqual(n1999.text(), "MCMXCIX")
         
     def testRoman444isCDXLIV(self):
-        fourfourfour = RomanNumber(444)
-        self.assertEqual(fourfourfour.text(), "CDXLIV")
+        self.assertEqual(RomanNumber(444).text(), "CDXLIV")
         
+    def testBonusTest(self):
+        self.assertEqual(RomanNumber(1900).text(), "MCM"),
+        self.assertEqual(RomanNumber(1975).text(), "MCMLXXV"),
+        self.assertEqual(RomanNumber(1989).text(), "MCMLXXXIX"),
+        self.assertEqual(RomanNumber(1999).text(), "MCMXCIX"),
+        self.assertEqual(RomanNumber(2000).text(), "MM"),
+        self.assertEqual(RomanNumber(2001).text(), "MMI"),
 
 
 if __name__ == "__main__":

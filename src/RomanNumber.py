@@ -31,7 +31,3 @@ class RomanNumber(object):
     def text(self):
         return self.romanEncode(self.number)
 
-    
-    
-
-print repr(RomanNumber.digits[0])
