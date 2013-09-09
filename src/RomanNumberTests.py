@@ -19,68 +19,52 @@ class Test(unittest.TestCase):
 
 
     def testRoman1isI(self):
-        one = RomanNumber(1)
-        self.assertEqual(one.text(), "I")
+        self.assertEqual(RomanNumber(1).text(), "I")
 
     def testRoman5isV(self):
-        five = RomanNumber(5)
-        self.assertEqual(five.text(), "V")
+        self.assertEqual(RomanNumber(5).text(), "V")
 
     def testRoman10isX(self):
-        ten = RomanNumber(10)
-        self.assertEqual(ten.text(), "X")
+        self.assertEqual(RomanNumber(10).text(), "X")
     
     def testRoman50isL(self):
-        fifty = RomanNumber(50)
-        self.assertEqual(fifty.text(), "L")
+        self.assertEqual(RomanNumber(50).text(), "L")
     
     def testRoman100isC(self):
-        hundred = RomanNumber(100)
-        self.assertEqual(hundred.text(), "C")
+        self.assertEqual(RomanNumber(100).text(), "C")
     
     def testRoman500isD(self):
-        fiveHundred = RomanNumber(500)
-        self.assertEqual(fiveHundred.text(), "D")
+        self.assertEqual(RomanNumber(500).text(), "D")
 
     def testRoman1000isM(self):
-        thousand = RomanNumber(1000)
-        self.assertEqual(thousand.text(), "M")
+        self.assertEqual(RomanNumber(1000).text(), "M")
         
     def testDoubleDigitRepetition(self):
-        twenty = RomanNumber(20)
-        self.assertEqual(twenty.text(), "XX")
+        self.assertEqual(RomanNumber(20).text(), "XX")
         
     def testTripleDigitRepetition(self):
-        threeHundred = RomanNumber(300)
-        self.assertEqual(threeHundred.text(), "CCC")
+        self.assertEqual(RomanNumber(300).text(), "CCC")
          
     def testRoman0isEmptyString(self):
-        zero = RomanNumber(0)
-        self.assertEqual(zero.text(), "")
+        self.assertEqual(RomanNumber(0).text(), "")
         
     def testSimpleCombination(self):
-        six = RomanNumber(6)
-        self.assertEqual(six.text(), "VI")        
+        self.assertEqual(RomanNumber(6).text(), "VI")        
         
     def testLongCombination(self):
-        sixsixsix = RomanNumber(666)
-        self.assertEqual(sixsixsix.text(), "DCLXVI")        
+        self.assertEqual(RomanNumber(666).text(), "DCLXVI")        
 
     def testRoman3001isMMMI(self):
-        n3001 = RomanNumber(3001)
-        self.assertEqual(n3001.text(), "MMMI")
+        self.assertEqual(RomanNumber(3001).text(), "MMMI")
         
     def testRoman4isIV(self):
-        four = RomanNumber(4)
-        self.assertEqual(four.text(), "IV")
+        self.assertEqual(RomanNumber(4).text(), "IV")
         
     def testRoman9isIX(self):
-        nine = RomanNumber(9)
-        self.assertEqual(nine.text(), "IX")
+        self.assertEqual(RomanNumber(9).text(), "IX")
         
     def testRoman1999isMCMXCIX(self):
-        n1999 = RomanNumber(1999)
-        self.assertEqual(n1999.text(), "MCMXCIX")
+        self.assertEqual(RomanNumber(1999).text(), "MCMXCIX")
         
     def testRoman444isCDXLIV(self):
         self.assertEqual(RomanNumber(444).text(), "CDXLIV")

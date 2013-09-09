@@ -30,4 +30,10 @@ class RomanNumber(object):
             
     def text(self):
         return self.romanEncode(self.number)
+    
+    def __str__(self):
+        return self.text()
+
+if __name__ == "__main__":
+    print RomanNumber(1984)
 
